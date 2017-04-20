@@ -13,7 +13,8 @@ All data for the game is saved using local storage.
 # Copyright Information:
 
 ## Coding:
-[Hassan Saad](http://hassansaad.com)
+[Coder - Hassan Saad](http://hassansaad.com)
+[Sky Gradient - Colorzilla](http://colorzilla.com/gradient-editor/#d6f9ff+0,9ee8fa+100;Blue+3D)
 
 ## Images:
 * [People-1](http://www.freepik.com/free-vector/different-types-of-families_823382.htm) Designed by Freepik
