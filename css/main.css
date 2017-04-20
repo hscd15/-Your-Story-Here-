@@ -44,6 +44,8 @@ article {
 }
 
 #buildings {
+    position: absolute;
+    top: 0;
     height: 100%;
     list-style: none;
     overflow: hidden;

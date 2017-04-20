@@ -22,7 +22,7 @@
     <script src="js/external/angular-animate.min.js"></script>
 </head>
 
-<body>
+<body data-ng-keydown="key($event)">
     <header data-ng-include="'templates/header.html'"></header>
     <article data-ui-view="content" data-ng-style="setArticle()" class="clearfix"></article>
     
