@@ -31,12 +31,12 @@ app.directive("resize", function ($window, $state) {
                 }
             }
 
-            scope.test = function () {
+            scope.buildingsWidth = function () {
                 if (this.buildings !== undefined) {
                     var numOfBuildings = this.buildings.length;
 
                     return {
-                        'width': (numOfBuildings * 300) + "px"
+                        'width': ((numOfBuildings * 300) + (numOfBuildings * 20)) + "px"
                     }
                 } else {
                     return {

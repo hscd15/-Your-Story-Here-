@@ -54,6 +54,7 @@ article {
 #buildings li {
     width: 300px;
     height: 100%;
+    margin: 0 10px;
     display: inline-block;
 }
 
