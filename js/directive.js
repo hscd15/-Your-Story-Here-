@@ -69,15 +69,28 @@ app.directive("resize", function ($window, $state) {
                 function moveStreet(direction) {
                     switch (currentState) {
                     case "mainStreet":
-                        var buildings = document.getElementById("buildings"),
+                        var w = scope.getWindowDimensions(),
+                            buildings = document.getElementById("buildings"),
                             angularElement = angular.element(buildings),
-                            position = angularElement.prop('offsetLeft'),
+                            buidingsWidth = angularElement.css('width'),
+                            buildingPosition = angularElement.prop('offsetLeft'),
                             positionInt = 0;
 
                         if (direction === "right") {
-                            positionInt = parseInt(position) - 10;
+                            var positionCheck = (parseInt(buidingsWidth) - (w.w * 0.85));
+                            if (-parseInt(buildingPosition) > positionCheck) {
+                                console.log("im at end of street")
+                                break;
+                            } else if (-parseInt(buildingPosition) < positionCheck) {
+                                positionInt = parseInt(buildingPosition) - 15;
+                            }
                         } else {
-                            positionInt = parseInt(position) + 10;
+                            if (parseInt(buildingPosition) == 15) {
+                                console.log("im at the start of the street")
+                                break;
+                            } else {
+                                positionInt = parseInt(buildingPosition) + 15;
+                            }
                         }
 
                         angularElement.css({
@@ -86,7 +99,7 @@ app.directive("resize", function ($window, $state) {
                             '-moz-transition': 'all 20ms cubic-bezier(0.55, 0.085, 0.68, 0.53)',
                             '-ms-transition': 'all 20ms cubic-bezier(0.55, 0.085, 0.68, 0.53)',
                             '-o-transition': 'all 20ms cubic-bezier(0.55, 0.085, 0.68, 0.53)',
-                            'transition': 'all 2ms cubic-bezier(0.55, 0.085, 0.68, 0.53)'
+                            'transition': 'all 4ms ease-in-out'
                         });
                         break;
                     }
