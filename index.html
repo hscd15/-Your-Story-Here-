@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-ng-app="barneysPizzaAndSubs" data-resize>
+<html data-ng-app="yourStoryHere" data-resize>
 
 <head>
     <meta charset="UTF-8">
@@ -24,8 +24,8 @@
 
 <body>
     <header data-ng-include="'templates/header.html'"></header>
-    <article data-ui-view="content" class="clearfix"></article>
-
+    <article data-ui-view="content" data-ng-style="setArticle()" class="clearfix"></article>
+    
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/controller.js"></script>
     <script type="text/javascript" src="js/directive.js"></script>
