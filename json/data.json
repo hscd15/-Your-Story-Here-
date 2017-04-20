@@ -1,0 +1,23 @@
+{
+    "buildings": {
+        "mainStreet": {
+            "bakery": {
+                "id": "bakery",
+                "name": "Bakery",
+                "imgSrc": "imgs/buildings/mainStreet/bakery.svg",
+                "imgAlt": "Vector image of a bakery. The walls are orange, with a dark green canopy. The over head sign is golden, it reads Bakery. On top of the bakery there is a sculpture of a loaf of bread."
+            },
+            "cafe": {
+                "id": "cafe",
+                "name": "Cafe",
+                "imgSrc": "imgs/buildings/mainStreet/cafeShop.svg",
+                "imgAlt": "Vector image of a coffe shop. The walls are bright yellow. The over head sign is a brown coffee colour, it reads Cafe. On top of the cafe there is a sculpture of a cup of coffee."
+            }
+        }
+    },
+    "actions": {
+        "buildings": {
+
+        }
+    }
+}
