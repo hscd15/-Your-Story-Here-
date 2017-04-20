@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html data-ng-app="barneysPizzaAndSubs" data-resize>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Your Story Here &#124; Life Game</title>
+    <meta name="description" content="A game to make the player think about everyday life. Disconnect from the rat race that we know as the world." />
+    <meta name="keywords" content="ORGP - Online Role Playing Game, " />
+    <meta name="author" content="Hassan Saad" />
+
+    <!-- Mobile Friendly -->
+    <meta name="handheldfriendly" content="true">
+    <meta name="mobileoptimized" content="240">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <!-- Scripts -->
+    <script src="js/external/angular.min.js" type="text/javascript"></script>
+    <script src="js/external/angular-ui-router.min.js"></script>
+    <script src="js/external/angular-animate.min.js"></script>
+</head>
+
+<body>
+    <header data-ng-include="'templates/header.html'"></header>
+    <article data-ui-view="content" class="clearfix"></article>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/controller.js"></script>
+    <script type="text/javascript" src="js/directive.js"></script>
+</body>
+
+</html>
