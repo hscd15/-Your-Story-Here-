@@ -1,8 +1,8 @@
 <section data-ng-style="setSection()">
     <h1>Main Street</h1>
 
-    <ul>
-        <li data-ng-repeat="building in list.buildings">
+    <ul id="buildings" data-ng-style="test()">
+        <li data-ng-repeat="building in buildings">
             <img id="{{building.id}}" src="{{building.imgSrc}}" alt="{{building.imgAlt}}" name="building">
         </li>
     </ul>

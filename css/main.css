@@ -19,6 +19,7 @@ article {
     margin: 0 7.5%;
     background: #ffffff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
 }
 
 #street {
@@ -31,4 +32,16 @@ article {
     height: 40%;
     background: #404042;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+#buildings {
+    height: 100%;
+    list-style: none;
+    overflow: hidden;
+}
+
+#buildings li {
+    width: 300px;
+    height: 100%;
+    display: inline-block;
 }

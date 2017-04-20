@@ -1,23 +1,46 @@
 {
     "buildings": {
-        "mainStreet": {
-            "bakery": {
+        "mainStreet": [{
                 "id": "bakery",
                 "name": "Bakery",
                 "imgSrc": "imgs/buildings/mainStreet/bakery.svg",
                 "imgAlt": "Vector image of a bakery. The walls are orange, with a dark green canopy. The over head sign is golden, it reads Bakery. On top of the bakery there is a sculpture of a loaf of bread."
-            },
-            "cafe": {
+            }, {
                 "id": "cafe",
                 "name": "Cafe",
                 "imgSrc": "imgs/buildings/mainStreet/cafeShop.svg",
                 "imgAlt": "Vector image of a coffe shop. The walls are bright yellow. The over head sign is a brown coffee colour, it reads Cafe. On top of the cafe there is a sculpture of a cup of coffee."
+            }, {
+                "id": "office",
+                "name": "Office Building",
+                "imgSrc": "imgs/buildings/mainStreet/office.svg",
+                "imgAlt": "Vector image of two office buildings. The walls are pink red and dark green blue. The pink red building is taller is a six story building, while the other is only four stories."
+            }, {
+                "id": "postOffice",
+                "name": "Post Office Building",
+                "imgSrc": "imgs/buildings/mainStreet/postOffice.svg",
+                "imgAlt": "Vector image of a post office building. The walls are made of red brick. On the left stands an old fashion mailbox. The overhead sign is golden and reads Post office. On top of the building stands a statue of letter to be sent."
+            }, {
+                "id": "bank",
+                "name": "Bank Building",
+                "imgSrc": "imgs/buildings/mainStreet/bank.svg",
+                "imgAlt": "Vector image of a bank building. The walls are made of grey concrete. The front of the bank is decorated with three greek coloums which are of the Doric style. The roof is a classic triangle shape meeting in the middle. Engraved in the roof on the front of the building is a dollar symbol, it is a golden colour. As well on the left of the building there is a statue of golden coins."
+            }, {
+                "id": "bookShop.svg",
+                "name": "Book Shop",
+                "imgSrc": "imgs/buildings/mainStreet/bookShop.svg",
+                "imgAlt": "Vector image of a book store. The walls are made of red wine colour. There are classic style windows on both sides of the door, books can be seen on the sill. The door itself has a glass window, which hold a sign with promotional information. On the left hand side of the store there is a statue of books as big as the store itself."
+            }, {
+                "id": "policeStation",
+                "name": "Police Station",
+                "imgSrc": "imgs/buildings/mainStreet/policeStation.svg",
+                "imgAlt": "Vector image of a police station. The walls are made of white concrete. The building is a two story building. The first floor has a tall glass door in the center with sticker badges hung on each side. The one on the right is the classic western sheriff badge, golden coloured. The second floor is decorated with glass windows, and an over head sign of dark blue colour reading Police."
+            }, {
+                "id": "pharmacy",
+                "name": "Pharmacy",
+                "imgSrc": "imgs/buildings/mainStreet/pharmacy.svg",
+                "imgAlt": "Vector image of a local small town pharmacy. The walls are bright green. The front door is on the left hand side of the building. On the left there is a window spanning the rest of the width of the building. The building is one story. The over head sign is a purple colour and it reads Pharmacy. On top of the building there is a statue of pills, on the right hand side there is a statue of a bottle of liquid medicine."
             }
-        }
-    },
-    "actions": {
-        "buildings": {
-
-        }
+        ]
     }
 }

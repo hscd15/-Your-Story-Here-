@@ -14,23 +14,35 @@ app.directive("resize", function ($window) {
             scope.windowWidth = newValue.w;
 
             scope.setArticle = function () {
-                console.log("____________________")
-                console.log("setArticle")
                 return {
                     'height': (newValue.h) + "px",
                 };
             };
-            
+
             scope.setSection = function () {
                 return {
                     'height': (newValue.h * 0.80) + "px"
                 }
             }
-            
+
             scope.setAside = function () {
-                console.log("setAside")
                 return {
                     'height': (newValue.h * 0.20) + "px"
+                }
+            }
+
+            scope.test = function () {
+                if (this.buildings !== undefined) {
+                    var numOfBuildings = this.buildings.length;
+                    console.log(element[0].children.length)
+
+                    return {
+                        'width': (numOfBuildings * 300) + "px"
+                    }
+                } else {
+                    return {
+                        'width': "100%"
+                    }
                 }
             }
         }, true);
