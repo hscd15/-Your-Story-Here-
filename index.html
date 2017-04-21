@@ -23,7 +23,7 @@
 </head>
 
 <body data-ng-keydown="key($event)">
-    <header data-ng-include="'templates/header.html'"></header>
+    <header data-ng-include="'templates/header.html'" data-ng-show="gameMenu"></header>
     <article data-ui-view="content" data-ng-style="setArticle()" class="clearfix"></article>
     
     <script type="text/javascript" src="js/main.js"></script>

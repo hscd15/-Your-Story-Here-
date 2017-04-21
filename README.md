@@ -13,19 +13,14 @@ All data for the game is saved using local storage.
 # Copyright Information:
 
 ## Coding:
-[Coder - Hassan Saad](http://hassansaad.com)
-[Sky Gradient - Colorzilla](http://colorzilla.com/gradient-editor/#d6f9ff+0,9ee8fa+100;Blue+3D)
+* [Coder - Hassan Saad](http://hassansaad.com)
+* [Sky Gradient - Colorzilla](http://colorzilla.com/gradient-editor/#d6f9ff+0,9ee8fa+100;Blue+3D)
 
 ## Images:
-* [People-1](http://www.freepik.com/free-vector/different-types-of-families_823382.htm) Designed by Freepik
-* [Poeple-2](http://www.freepik.com/free-vector/flat-collection-of-families_823381.htm) Designed by Freepik
+People:
+* [Character Faces Icons](http://www.freepik.com/free-vector/character-faces-icons_777192.htm) Designed by Freepik
 
 Buildings:
-* [Variety City Buildings 1](http://www.freepik.com/free-vector/variety-of-city-buildings_821377.htm) Designed by Freepik
-* [Variety City Buildings 2](http://www.freepik.com/free-vector/variety-of-city-buildings_793684.htm) Designed by Freepik
-* [Buildings Set](http://www.freepik.com/free-vector/buildings-set_765392.htm) Designed by Freepik
-* [Flat Cityscape Pack](http://www.freepik.com/free-vector/flat-cityscape-pack_829214.htm) Designed by Freepik
-* [Colorful City Skyline With Sunburst](http://www.freepik.com/free-vector/colorful-city-skyline-with-sunburst_696191.htm) Designed by Freepik
 * [Building Designs Collection](http://www.freepik.com/free-vector/building-designs-collection_1052914.htm) Designed by Freepik
 * [City Landscape Flat Design](http://www.freepik.com/free-vector/city-landscape-in-flat-design_881355.htm) Designed by Freepik
 * [Ramadan Background Design](http://www.freepik.com/free-vector/ramadan-background-design_1080649.htm) Designed by Freepik

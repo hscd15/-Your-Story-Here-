@@ -1,1 +1,17 @@
-<p>hello</p>
+<section data-ng-style="setSection()">
+    <ul id="buildings" data-ng-style="buildingsWidth()">
+        <li data-ng-repeat="building in buildings">
+            <img id="{{building.id}}" src="{{building.imgSrc}}" alt="{{building.imgAlt}}" name="building">
+        </li>
+    </ul>
+</section>
+
+<aside id="street" data-ng-style="setAside()">
+    <div id="sideWalk"></div>
+    <ul id="streetWhiteMarks">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</aside>

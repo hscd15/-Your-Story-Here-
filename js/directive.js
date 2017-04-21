@@ -45,65 +45,70 @@ app.directive("resize", function ($window, $state) {
                 }
             }
 
+
+
             scope.key = function ($event) {
                 var currentState = $state.current.name;
 
                 switch ($event.keyCode) {
                 case 38:
-                    alert("up arrow");
+                    //alert("up arrow");
                     break;
                 case 39:
                     moveStreet("right")
                     break;
                 case 40:
-                    alert("down arrow");
+                    //alert("down arrow");
                     break;
                 case 37:
                     moveStreet("left");
                     break;
                 case 13:
-                    alert('Stop hitting return :p');
+                    if (scope.gameMenu == false) {
+                        scope.gameMenu = true;
+                    } else {
+                        scope.gameMenu = false;
+                    }
+                    
                     break;
                 }
 
                 function moveStreet(direction) {
-                    switch (currentState) {
-                    case "mainStreet":
-                        var w = scope.getWindowDimensions(),
-                            buildings = document.getElementById("buildings"),
-                            angularElement = angular.element(buildings),
-                            buidingsWidth = angularElement.css('width'),
-                            buildingPosition = angularElement.prop('offsetLeft'),
-                            positionInt = 0;
+                    var w = scope.getWindowDimensions(),
+                        buildings = document.getElementById("buildings"),
+                        angularElement = angular.element(buildings),
+                        buidingsWidth = angularElement.css('width'),
+                        buildingPosition = angularElement.prop('offsetLeft'),
+                        positionInt = 0;
 
-                        if (direction === "right") {
-                            var positionCheck = (parseInt(buidingsWidth) - (w.w * 0.85));
-                            if (-parseInt(buildingPosition) > positionCheck) {
-                                console.log("im at end of street")
-                                break;
-                            } else if (-parseInt(buildingPosition) < positionCheck) {
-                                positionInt = parseInt(buildingPosition) - 15;
-                            }
-                        } else {
-                            if (parseInt(buildingPosition) == 15) {
-                                console.log("im at the start of the street")
-                                break;
-                            } else {
-                                positionInt = parseInt(buildingPosition) + 15;
-                            }
+                    if (direction === "right") {
+                        var positionCheck = (parseInt(buidingsWidth) - (w.w * 0.85));
+                        if (-parseInt(buildingPosition) > positionCheck) {
+                            console.log("im at end of street")
+
+                            return;
+                        } else if (-parseInt(buildingPosition) < positionCheck) {
+                            positionInt = parseInt(buildingPosition) - 15;
                         }
+                    } else {
+                        if (parseInt(buildingPosition) == 15) {
+                            console.log("im at the start of the street")
 
-                        angularElement.css({
-                            'left': '' + positionInt + 'px',
-                            '-webkit-transition': 'all 20ms cubic-bezier(0.55, 0.085, 0.68, 0.53)',
-                            '-moz-transition': 'all 20ms cubic-bezier(0.55, 0.085, 0.68, 0.53)',
-                            '-ms-transition': 'all 20ms cubic-bezier(0.55, 0.085, 0.68, 0.53)',
-                            '-o-transition': 'all 20ms cubic-bezier(0.55, 0.085, 0.68, 0.53)',
-                            'transition': 'all 4ms ease-in-out'
-                        });
-                        break;
+                            return;
+                        } else {
+                            positionInt = parseInt(buildingPosition) + 15;
+                        }
                     }
-                    console.log(currentState)
+
+                    angularElement.css({
+                        'left': '' + positionInt + 'px',
+                        '-webkit-transition': 'all 20ms cubic-bezier(0.55, 0.085, 0.68, 0.53)',
+                        '-moz-transition': 'all 20ms cubic-bezier(0.55, 0.085, 0.68, 0.53)',
+                        '-ms-transition': 'all 20ms cubic-bezier(0.55, 0.085, 0.68, 0.53)',
+                        '-o-transition': 'all 20ms cubic-bezier(0.55, 0.085, 0.68, 0.53)',
+                        'transition': 'all 4ms ease-in-out'
+                    });
+                    return;
                 }
             }
         }, true);

@@ -1,4 +1,23 @@
 {
+    "yourLife": [{
+        "name": "Health",
+        "num": 100
+    }, {
+        "name": "Food",
+        "num": 100
+    }, {
+        "name": "Education",
+        "num": 100
+    }, {
+        "name": "Culture",
+        "num": 100
+    }, {
+        "name": "Hapiness",
+        "num": 100
+    }, {
+        "name": "Health",
+        "num": 100
+    }],
     "buildings": {
         "mainStreet": [{
                 "id": "bakery",
@@ -41,6 +60,58 @@
                 "imgSrc": "imgs/buildings/mainStreet/pharmacy.svg",
                 "imgAlt": "Vector image of a local small town pharmacy. The walls are bright green. The front door is on the left hand side of the building. On the left there is a window spanning the rest of the width of the building. The building is one story. The over head sign is a purple colour and it reads Pharmacy. On top of the building there is a statue of pills, on the right hand side there is a statue of a bottle of liquid medicine."
             }
-        ]
+        ],
+        "homeStreet": [{
+            "id": "houseOne",
+            "name": "The Clancy Residance",
+            "imgSrc": "imgs/buildings/homeStreet/houseOne.svg",
+            "imgAlt": "Vector image of a purple three story home."
+        }, {
+            "id": "houseTwo",
+            "name": "The Patak Residance",
+            "imgSrc": "imgs/buildings/homeStreet/houseTwo.svg",
+            "imgAlt": "Vector image of a brick two story home."
+        }, {
+            "id": "houseThree",
+            "name": "Your Home",
+            "imgSrc": "imgs/buildings/homeStreet/houseThreeColour.svg",
+            "imgAlt": "Vector image of a brick three story home, the house is bright red. The front door is made of pine."
+        }, {
+            "id": "houseFour",
+            "name": "The Saad Residance",
+            "imgSrc": "imgs/buildings/homeStreet/houseFour.svg",
+            "imgAlt": "Vector image of a yellow brick three story home, the first floor is used as a shop front."
+        }, {
+            "id": "houseFive",
+            "name": "The Foran Residance",
+            "imgSrc": "imgs/buildings/homeStreet/houseFive.svg",
+            "imgAlt": "Vector image of a two story home, with an atic."
+        }]
+    },
+    "actions": {
+        "building": {
+            "bookShop": [{
+                "id": "buyBook",
+                "name": "Buy Book",
+                "cost": 20.00
+            }, {
+                "id": "sellBook",
+                "name": "Sell Book",
+                "cost": 15.00
+            }, {
+                "id": "robStore",
+                "name": "Rob Book Store",
+                "cost": 250.00
+            }],
+            "cafe": [{
+                "id": "buyCoffee",
+                "name": "Buy Coffee",
+                "cost": 2.50
+            }, {
+                "id": "buyFancyCoffee",
+                "name": "Buy Fancy Coffee",
+                "cost": 6.00
+            }]
+        }
     }
 }
